@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Using_Array {
+    
+        public static void main(String[] args) {
+
+            Scanner input = new Scanner(System.in);
+
+            int[] values = new int[20];
+            int sum = 0;
+            
+            System.out.println("Input numerical value ");
+            for(int x = 0; x < values.length; x++){
+                values[x]=input.nextInt();
+            }
+            System.out.println("Your inputted numerical values are: ");
+            for(int x = 0; x < 20; x++){
+                System.out.println(values[x]+" ");
+                sum = values[x]+sum;
+            }
+            System.out.print("\nTotal of the inputted numerical values: "+sum);
+        }
+    }
+
+
